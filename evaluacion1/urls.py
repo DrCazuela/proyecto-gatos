@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from vistac import views as C
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('persa/', C.quinto),
+    path('siameses/', C.sexto),
+    path('manchitas/', C.mimanchitas),
+    path('gatopan/', C.gatopan),
 ]
